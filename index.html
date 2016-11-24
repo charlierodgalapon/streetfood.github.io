@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Heroic Features - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    .jumbotron{
+    	background-color: black ;
+        background-image: url(taraballs.jpg);
+        background-position: center center;
+    }
+    </style>
+    <script>
+    function whoYou(){
+
+        var fname = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        var addr = document.getElementById("address").value;
+        var cn = document.getElementById("contact").value;
+        var em = document.getElementById("email").value;
+        if(document.getElementById("btn1").checked){
+            var itemr=document.getElementById("btn1").value;
+        }else if(document.getElementById("btn2").checked){
+            var item=document.getElementById("btn2").value;
+        }else if(document.getElementById("btn3").checked){
+            var item=document.getElementById("btn3").value;
+        }
+        else if(document.getElementById("btn4").checked){
+            var item=document.getElementById("btn4").value;
+        }
+        else if(document.getElementById("btn5").checked){
+            var item=document.getElementById("btn5").value;
+        }
+        else if(document.getElementById("btn6").checked){
+            var item=document.getElementById("btn6").value;
+        }
+        else if(document.getElementById("btn7").checked){
+            var item=document.getElementById("btn7").value;
+        }
+        else{
+            var item=document.getElementById("btn8").value;
+        }
+
+        if (document.getElementById("lol").checked) {
+            alert( "Hello " + fname  + "\nAge: " + age +"\nArcana: "+ item+ "\nAddress " + addr + "\nContact Number " + cn + " and " + "Email " + em +"\nPrice: $20");
+        } else{
+            alert("You need to agree to the terms and conditions")
+        }
+
+    } 
+        
+        
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>-->
+                <a class="navbar-brand" href="#">STREET FOODS</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>-->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h1 style="color:white;">A Warm Welcome!</h1>
+            <p style="color:white;">ALL street foods! for only 10 pesos!<br/>
+            </p>
+            <!--<p><a class="btn btn-primary btn-large">Call to action!</a>
+            </p>-->
+        </header>
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Choose Your Food </h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="fish.jpg" alt="">
+                    <div class="caption">
+                        <h3>Fish ball</h3>
+                        <p>Fish balls are a common food in southern China, Hong Kong, Macau, Southeast Asia and overseas Chinese communities made from "fish paste" (otherwise known as Chinese: 魚漿; pinyin: yújiāng; Jyutping: jyu4 zoeng1). They are also common in Scandinavia, where they are usually made from cod or haddock.</p>
+                        <p>
+                            <input type="radio" value="Fiery Soul of the Slayer" id="btn1"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="kikiam.jpg" alt="">
+                    <div class="caption">
+                        <h3>Kikiam</h3>
+                        <p>SKikiam is a sausage-like dish that has a Chinese origin. It was adopted right away ever since it was introduced in the Philippines. In fact, there have been many Filipino recipes that incorporate it as an ingredient; loming batangas and some versions of pancit canton are just a few examples.</p>
+                        <p>
+                            <input type="radio"  value="Blades of Voth Domosh" id="btn2"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="squid.jpg" alt="">
+                    <div class="caption">
+                        <h3>squid balls</h3>
+                        <p>Squid balls (Chinese: 蝦球; pinyin: xiā qiú) are a common cooked food in southern China and overseas Chinese communities in Southeast Asia, with its origin from the cuisine of the Chaoshan region in eastern Guangdong. As the name suggests, the food is balls made with prawn meat that has been finely pulverized. Gourmet prawn balls are pulverized by hand.</p>
+                        <p>
+                            <input type="radio" value=">Fractal Horns of Inner Abysm" id="btn3"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="kalamares.jpg" alt="">
+                    <div class="caption">
+                        <h3>Kalamares</h3>
+                        <p>Kalamares is a popular food in many parts of the world. Calamaris is a culinary name for squid, especially for dishes from the Mediterranean, notably fried squid (fried calamaris).</p>
+                        <p>
+                            <input type="radio" value="Swine of the Sunken Galley" id="btn4"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="kwek.jpg" alt="">
+                    <div class="caption">
+                        <h3>Tokneneng</h3>
+                        <p>Tokneneng is a tempura-like Filipino street food made by deep-frying orange batter covered hard-boiled eggs.</p>
+                        <p>
+                            <input type="radio" value="Demon Eater" id="btn5"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+        <center><h2>Fill out to buy</h2></center>
+        <form>
+            <div class="left">
+            <p align="center">
+                Name :<br><input type ="text" id="name" style="width:200px; border:1px solid #999999"/><br/>
+                Age : <br><input type ="text" id="age" style="width:200px; border:1px solid #999999"/><br/>
+                Address :<br> <input type="text" id="address" style="width:200px; border:1px solid #999999"/><br/>
+                Contact Number :<br> <input type="text" id="contact" style="width:200px; border:1px solid #999999"/><br/>
+                Email : <br><input type="text" id="email" style="width:200px; border:1px solid #999999"/><br/>
+                <input type="checkbox" name="check" id="lol" >I have agreed to the terms and conditions<br/>
+                <button type="reset" value="Reset">Reset</button>
+                <input type="button" value="Submit" onclick="whoYou();"/>
+            </p>
+            </div>
+        </form>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
